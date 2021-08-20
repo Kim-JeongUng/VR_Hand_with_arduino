@@ -52,7 +52,7 @@ public class ctrl : MonoBehaviour
 		{
 			hand.localRotation = Quaternion.Euler(new Vector3(float.Parse(result[0]), float.Parse(result[1]), float.Parse(result[2])));
 			for (int i = 0; i < finger.Length; i++) {
-				finger[i].localPosition = new Vector3(finger[i].localPosition.x, finger[i].localPosition.y, float.Parse(result[i + 3])/10.0f);
+				finger[i].localPosition = new Vector3(finger[i].localPosition.x, finger[i].localPosition.y, float.Parse(result[i + 3])/50.0f);
 			}
 			Debug.Log(result[0]);
 
